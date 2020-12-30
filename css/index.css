@@ -1,0 +1,234 @@
+:root{
+    --nav-color:#0b0b16;
+    --nav-text-color:#ffffff;
+}
+button , a{
+    cursor: pointer;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+.w100{
+    height:120vh;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+
+}
+.topslider{
+    width: 100%;
+    background-color: lightcoral;
+    height: 100%;
+}
+#slider{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.side-nav{
+    width: 15rem;
+    height: 100vh;
+    position: fixed;
+    left: -15rem;
+    z-index: 2;
+    background-color: lawngreen;
+}
+.side-nav-hiden{
+    left: 0rem;
+
+}
+.body{
+    width: 100vw;
+    padding-left: 0rem;
+}
+.body-navout{
+    padding-left: 15rem;
+}
+header{
+    width: 100%;
+    background-color: aqua;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 3rem;
+    background-color: white;
+    border-radius: 3rem;
+    justify-self: flex-end;
+    transform: translateY(50%);
+    margin-top: -3rem;
+    background-color: var(--nav-color);
+    box-shadow: 0 .3rem .5rem -.1rem blue;
+    color: white;
+    transition: .2s ease;
+    
+}
+.stickynav{
+    position: fixed;
+    width: 96vw;
+    border-radius: 0 0 1rem 1rem;
+    left: 2vw;
+    transform: translateY(100%);
+    z-index: 10;
+    box-shadow: 0 .3rem .4rem -.1rem rgb(43, 43, 43);
+    transition: .2s ease;
+}
+nav > div{
+    height: 100%;
+    padding: .4rem;
+    display: flex;
+    align-items: center;
+    color: inherit;
+}
+.nav-circle{
+    height: 2.6rem;
+    width: 2.6rem;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: .5rem;
+    background-color: white;
+    margin-left: -.2rem;
+}
+.homelogo{
+    height: 2rem;
+}
+.title{
+    font-family: monospace;
+    font-size: 1.3rem;
+}
+.search{
+    width: 32vw;
+    border-radius: 3rem;
+    border: none;
+    height: 99%;
+    padding: .2rem 2rem;
+    color: rgb(51, 51, 51);
+    transition:.2s ease-in-out;
+
+}
+.search:focus{
+    width: 34vw;
+    box-shadow: 0 0 .6rem -.2rem rgb(40, 40, 211);
+    transition:.2s ease-in-out;
+}
+.src-icon{
+    height: 70%;
+    transform: translateX(120%);
+}
+.src-btn{
+    width: 4rem;
+    height: 88%;
+    border: none;
+    border-radius: 3rem;
+    padding: 0 1rem;
+    transform: translateX(-4.2rem);
+    background-color: rgba(0, 0, 0, 0.301);
+    color: var(--nav-color);
+    position: relative;
+}
+.src-btn::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 0;
+    border-radius: 2rem;
+    top: 0;
+    background-color: rgba(76, 0, 130, 0);
+    bottom: 0;
+    transition:.3s ease;
+}
+.src-btn:hover{
+    color: var(--nav-text-color);
+}
+.src-btn:hover::before{
+    content: '';
+    background-color: indigo;
+    width: 100%;
+    position: absolute;
+    transition:.3s ease;
+    z-index: -1;
+
+}
+.nav-end{
+    margin-left: -3rem;
+}
+.nav-end > a{
+    position: relative;
+    text-decoration: none;
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: var(--nav-text-color);
+    border-radius: 3rem;
+    margin-left: .4rem;
+    padding-bottom: .1rem;
+    background-color: rgba(0, 0, 0, 0);
+    width: 5.6rem;
+}
+.nav-end >a:hover{
+    color:rgb(47, 5, 77);
+}
+.nav-end >a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    left: 0;
+    border-radius: 2rem;
+    top: 0;
+    background-color: rgba(76, 0, 130, 0);
+    bottom: 0;
+    transition:.3s ease;
+}
+.nav-end >a:hover::before{
+    content: '';
+    background-color: rgb(204, 204, 204);
+    height: 100%;
+    position: absolute;
+    transition:.3s ease;
+    z-index: -1;
+}
+/* templates */
+.bg-tr::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 0;
+    border-radius: 2rem;
+    top: 0;
+    background-color: rgba(76, 0, 130, 0);
+    bottom: 0;
+    transition:.3s ease;
+}
+.bg-tr:hover{
+    color: var(--nav-text-color);
+}
+.bg-tr:hover::before{
+    content: '';
+    background-color: indigo;
+    width: 100%;
+    position: absolute;
+    transition:.3s ease;
+    z-index: -1;
+
+}
