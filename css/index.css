@@ -303,6 +303,11 @@ nav > div{
     height: .36rem;
 }
 .linear-seemore{
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     position: relative;
     border-radius: .5rem;
