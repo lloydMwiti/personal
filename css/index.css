@@ -348,20 +348,22 @@ nav > div{
 .prop-desc >p{
     color: rgb(219, 219, 219);
 }
-.prop-desc >button{
+.prop-desc >a{
     align-self: center;
     border: none;
     background-color: var(--nav-color);
     width: 90%;
     max-width: 20rem;
-    padding: .4rem 0;
-    margin-top: 1rem;
+    padding: .4rem 1.5rem;
+    text-decoration: none;
+    margin-top: 3rem;
     border-radius: 3rem;
     color: rgb(162, 52, 241);
     transition: .3s ease;
+    transform: translateY(0rem);
 
 }
-.prop-desc >button:hover{
+.prop-desc >a:hover{
     transform: translateY(-.4rem);
     transition: .3s ease;
     box-shadow: 0 .3rem .5rem -.1rem rgb(174, 112, 245);
@@ -469,14 +471,10 @@ nav > div{
     z-index: -1;
 
 }
-.html{
-    width: 96%;
-}
-.css{
-    width: 97%;
-}
+.html{width: 96%;}
+.css{width: 97%;}
 .js{width: 89%;}
-.php{   width: 60%;}
+.php{width: 60%;}
 .webd{width: 90%;}
 .appd{width:85%}
 .prog{width: 60%;}
