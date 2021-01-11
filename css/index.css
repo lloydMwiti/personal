@@ -241,6 +241,9 @@ nav > div{
     width: 20rem;
     min-height: 20rem;
     border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: white;
     box-shadow: 0 .2rem .7rem -.2rem blue;
 }
@@ -285,8 +288,8 @@ nav > div{
     justify-content: space-between;
     padding: 1.3rem 1rem;
     border-radius: 1rem; 
-    min-height: 17rem;
-    width: 17rem;
+    min-height: 21rem;
+    width: 19rem;
     background-color: white;
     margin: 1rem;
     box-shadow: 0 .2rem .5rem -.1rem rgb(43, 43, 43);
@@ -466,3 +469,14 @@ nav > div{
     z-index: -1;
 
 }
+.html{
+    width: 96%;
+}
+.css{
+    width: 97%;
+}
+.js{width: 89%;}
+.php{   width: 60%;}
+.webd{width: 90%;}
+.appd{width:85%}
+.prog{width: 60%;}
